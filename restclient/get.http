@@ -7,13 +7,21 @@ GET http://localhost:3000/songs
 
 ###find song
 
-GET  http://localhost:3000/songs
+GET  http://localhost:3000/songs/1
 
 ###create a new song
 POST http://localhost:3000/songs
+Content-Type: application/json
+
+{  
+  "title":"the booker",
+  "artists":["booker"],
+  "releasedDate":"2023-05-06",
+  "duration":"02:34"
+}
 
 ###update songs
-PUT http://localhost:300/songs
+PUT http://localhost:3000/songs/1
 
 ###delete song
-DELETE http://localhost:3000/songs
+DELETE http://localhost:3000/songs/1
